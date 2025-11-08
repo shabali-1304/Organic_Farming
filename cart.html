@@ -349,12 +349,11 @@ function checkout() {
     updateCartUI();
     document.getElementById("cartModal").classList.remove("active");
 }
-// Close the cart when clicking outside of it
+
 document.addEventListener("click", function(event) {
   const cartModal = document.getElementById("cartModal");
   const cartButton = document.getElementById("cartButton");
 
-  // If cart is open and click happens outside both cart and button, close it
   if (cartModal.classList.contains("active") && 
       !cartModal.contains(event.target) && 
       !cartButton.contains(event.target)) {
