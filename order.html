@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+              /* Top contact bar */
+        .top-bar {
+            background-color: #ff6b4a;
+            color: white;
+            padding: 6px 0;
+            text-align: center;
+            font-size: 14px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar span {
+            margin: 0 10px;
+        }
+
+        /* Navigation header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 12px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: fixed;
+            top: 32px; /* Below top-bar */
+            left: 0;
+            width: 100%;
+            z-index: 999;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b4a;
+        }
+         /* Order Section */
+        .order-section {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .order-section img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .order-section h2 {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
+        .order-section p {
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #dcdcdc;
+        }
+
+        .order-section button {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .order-section button:hover {
+            background-color: white;
+            color: #004d40;
+        }
+
+        /* Cards section */
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+            background-color: #004d40;
+        }
+
+        .card {
+            width: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card img {
+            width: 80%;
+            height: 400px;
+            object-fit: cover;
+            filter: brightness(80%);
+        }
+
+        .card p {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        footer {
+            background: #ff6b4a;
+            text-align: center;
+            padding: 12px;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 999;
+        }
+         
+    </style>
+     <!-- Top Contact Bar -->
+    <div class="top-bar">
+        <span>📞 +91 83600 30469</span> |
+        <span>📧 shabaliiiii@gmail.com</span>
+    </div>
+
+    <!-- Header Navigation -->
+    <header>
+        <img src="/shabalilogo.png" alt="Shabali Logo">
+        <nav>
+            <ul>
+                <li><a href= "/home.html">Home</a></li>
+                <li><a href="/order.html">Order</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/contact.html">Contact Us</a></li>
+                <li><a href="/cart.html">Cart</a></li>
+            </ul>    
+        </nav>
+    </header>
+    <!-- Order Section -->
+    <section class="order-section">
+        <img src="/Screenshot 2025-10-28 203505.png" alt="Fruits">
+        <h2>Order a Fresh Produce Box</h2>
+        <p>Fresh from our fields to your home — place your order now and enjoy 100% organic, chemical-free produce grown with care and love. Choose from our wide range of fruits, vegetables, and farm products, all harvested at peak freshness to ensure the best quality for you and your family.</p>
+        <a href="/cart.html">
+            <button>Order Now</button>
+        </a>
+    </section>
+
+    <!-- Product Cards -->
+    <section class="cards">
+        <div class="card">
+            <img src="/Screenshot 2025-10-28 204304.png">
+        </div>
+        <div class="card">
+            <img src="/Screenshot 2025-10-28 204317.png">
+        </div>
+        <div class="card">
+            <img src="/Screenshot 2025-10-28 204346.png">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+          Shabali Organic Farming
+    </footer>
+
+</body>
+</html>

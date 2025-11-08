@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Top bar */
+.top-bar {
+  background-color: #ff7043;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  border-bottom: 2px solid #ff7043;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff7043;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: 10%;
+  display: block;
+}
+
+/* Subscribe Section - Overlapping Box */
+.subscribe {
+  position: relative;
+  top: -80px; /* moves box upward to overlap */
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.subscribe-box {
+  background-color: #ff7043;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.subscribe-box h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subscribe-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.email-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.email-box input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  text-align: center;
+}
+
+.email-box button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.email-box button:hover {
+  background-color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: #004d40;
+  color: white;
+  padding: 80px 50px 40px; /* extra top padding for overlap */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-box {
+  width: 30%;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-box h3 {
+  margin-bottom: 10px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  margin-bottom: 8px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.copyright {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+  font-size: 14px;
+  margin-top: 20px;
+}
